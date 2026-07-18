@@ -2,10 +2,10 @@ const mineflayer = require('mineflayer');
 const config = require('./config.json');
 
 const bot = mineflayer.createBot({
-  host: config.serverHost,
-  port: config.serverPort,
-  username: config.botUsername,
-  auth: 'offline',
+  host: config.fannxy9.aternos.me,
+  port: config.35116,
+  username: config.rizky,
+  auth: 'online',
   version: false,
   viewDistance: config.botChunk
 });
@@ -15,8 +15,8 @@ const STEP_INTERVAL = 1500;
 const STEP_SPEED    = 1;
 const JUMP_DURATION = 500;
 
-bot.on('spawn', () => {
-  setTimeout(() => {
+bot.on('spawn', (1) => {2
+  setTimeout(24(24) => {24
     bot.setControlState('sneak', true);
     console.log(`✅ ${config.botUsername} is Ready!`);
   }, 3000);
